@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  shamei: MyText
+  sec_name1: MyString
+  sec_name2: MyString
+  position: MyString
+  post_code: 1
+  address1: MyText
+  address2: MyText
+  dolor: false
+  honor: MyString
+  note: MyText
+
+two:
+  name: MyString
+  shamei: MyText
+  sec_name1: MyString
+  sec_name2: MyString
+  position: MyString
+  post_code: 1
+  address1: MyText
+  address2: MyText
+  dolor: false
+  honor: MyString
+  note: MyText

@@ -1,0 +1,66 @@
+<p id="notice"><%= notice %></p>
+
+<h1>送付先情報</h1>
+
+<p>
+  <strong>氏名:</strong>
+  <%= @recipient.name %>
+</p>
+
+<p>
+  <strong>会社名:</strong>
+  <%= @recipient.shamei %>
+</p>
+
+<p>
+  <strong>部署1:</strong>
+  <%= @recipient.sec_name1 %>
+</p>
+
+<p>
+  <strong>部署2:</strong>
+  <%= @recipient.sec_name2 %>
+</p>
+
+<p>
+  <strong>役職名:</strong>
+  <%= @recipient.position %>
+</p>
+
+<p>
+  <strong>郵便番号:</strong>
+  <%= @recipient.post_code %>
+</p>
+
+<p>
+  <strong>住所1:</strong>
+  <%= @recipient.address1 %>
+</p>
+
+<p>
+  <strong>住所2:</strong>
+  <%= @recipient.address2 %>
+</p>
+
+<p>
+  <strong>喪中:</strong>
+  <%= @recipient.dolor %>
+</p>
+
+<p>
+  <strong>担当者:</strong>
+</p>
+
+<p>
+  <strong>備考:</strong>
+  <%= @recipient.note %>
+</p>
+
+<p>
+  <strong>変更履歴:</strong>
+</p>
+
+<%= link_to '編集', edit_recipient_path(@recipient) %> |
+<%= link_to '戻る', recipients_path %> |
+<%= link_to '削除', recipients_path, method: :delete, data: { confirm: '本当によろしいですか?' } %>
+
