@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_26_010749) do
+ActiveRecord::Schema.define(version: 2019_08_28_071224) do
+
+  create_table "recipient_users", force: :cascade do |t|
+    t.integer "recipient_id"
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["recipient_id"], name: "index_recipient_users_on_recipient_id"
+    t.index ["user_id"], name: "index_recipient_users_on_user_id"
+  end
 
   create_table "recipients", force: :cascade do |t|
     t.string "name"

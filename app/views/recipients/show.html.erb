@@ -48,7 +48,7 @@
 </p>
 
 <p>
-  <strong>担当者:</strong>
+  <strong>敬称:</strong>
 </p>
 
 <p>
@@ -61,6 +61,6 @@
 </p>
 
 <%= link_to '編集', edit_recipient_path(@recipient) %> |
-<%= link_to '戻る', recipients_path %> |
-<%= link_to '削除', recipients_path, method: :delete, data: { confirm: '本当によろしいですか?' } %>
+<%= link_to '戻る', recipients_path %>
+<%= link_to '削除', @recipient, method: :delete, data: { confirm: '本当によろしいですか?' } %>
 
